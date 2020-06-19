@@ -1,0 +1,18 @@
+BEGIN options
+END options
+
+BEGIN timing
+  TDIS6  DISV.tdis
+END timing
+
+BEGIN models
+  gwf6  Modele_raffine.nam  Modele_raffine
+END models
+
+BEGIN exchanges
+END exchanges
+
+BEGIN solutiongroup  1
+  ims6  DISV.ims  Modele_raffine
+END solutiongroup  1
+

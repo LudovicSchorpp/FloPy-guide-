@@ -1,0 +1,11 @@
+BEGIN options
+  BUDGET  FILEOUT  Modele_raffine.cbc
+  HEAD  FILEOUT  Modele_raffine.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  LAST
+  PRINT  BUDGET  ALL
+END period  1
+
