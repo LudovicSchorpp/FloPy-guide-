@@ -1,0 +1,299 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.0.4 03/13/2019
+
+   MODFLOW 6 compiled Mar 21 2019 15:37:31 with IFORT compiler (ver. 19.0.0)
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+MODFLOW was compiled using uniform precision.
+Precision of REAL variables: 15
+
+
+ OPENED tuto_BC.rcha
+ FILE TYPE:RCH6                   UNIT 1005   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_BC.wel
+ FILE TYPE:WEL6                   UNIT 1006   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_BC.chd
+ FILE TYPE:CHD6                   UNIT 1007   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_BC.npf
+ FILE TYPE:NPF6                   UNIT 1008   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_BC.oc
+ FILE TYPE:OC6                    UNIT 1009   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_BC.ic
+ FILE TYPE:IC6                    UNIT 1010   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_BC.dis
+ FILE TYPE:DIS6                   UNIT 1011   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_BC.riv
+ FILE TYPE:RIV6                   UNIT 1012   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_BC.drn
+ FILE TYPE:DRN6                   UNIT 1013   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_BC.evt
+ FILE TYPE:EVT6                   UNIT 1014   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_BC.ghb
+ FILE TYPE:GHB6                   UNIT 1015   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM UNIT 1011
+
+
+ PROCESSING DISCRETIZATION OPTIONS
+ END OF DISCRETIZATION OPTIONS
+ MODEL LENGTH UNIT IS UNDEFINED
+ PROCESSING DISCRETIZATION DIMENSIONS
+    NLAY =       3
+    NROW =      30
+    NCOL =      40
+ END OF DISCRETIZATION DIMENSIONS
+ PROCESSING GRIDDATA
+
+   MODEL LAYER BOTTOM EL. =   5.000000     FOR LAYER 1
+
+   MODEL LAYER BOTTOM EL. =   0.000000     FOR LAYER 2
+
+   MODEL LAYER BOTTOM EL. =  -1.000000     FOR LAYER 3
+
+                  IDOMAIN = 1
+ END PROCESSING GRIDDATA
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM UNIT 1008
+
+
+ PROCESSING NPF OPTIONS
+    CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
+ END OF NPF OPTIONS
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1006
+
+ PROCESSING WEL OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF WEL OPTIONS
+
+ PROCESSING WEL DIMENSIONS
+    MAXBOUND =       1
+ END OF WEL DIMENSIONS
+
+ DRN   -- DRN PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1013
+
+ PROCESSING DRN OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF DRN OPTIONS
+
+ PROCESSING DRN DIMENSIONS
+    MAXBOUND =      51
+ END OF DRN DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1012
+
+ PROCESSING RIV OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      31
+ END OF RIV DIMENSIONS
+
+ GHB   -- GHB PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1015
+
+ PROCESSING GHB OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF GHB OPTIONS
+
+ PROCESSING GHB DIMENSIONS
+    MAXBOUND =      10
+ END OF GHB DIMENSIONS
+
+ RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1005
+
+ PROCESSING RCH OPTIONS
+    RECHARGE INPUT WILL BE READ AS ARRAY(S).
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF RCH OPTIONS
+
+ EVT   -- EVT PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1014
+
+ PROCESSING EVT OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF EVT OPTIONS
+
+ PROCESSING EVT DIMENSIONS
+    MAXBOUND =    1200
+    NSEG = 3
+ END OF EVT DIMENSIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1007
+
+ PROCESSING CHD OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF CHD OPTIONS
+
+ PROCESSING CHD DIMENSIONS
+    MAXBOUND =      30
+ END OF CHD DIMENSIONS
+
+ IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1010
+ PROCESSING GRIDDATA
+
+     INITIAL HEAD =   1.000000    
+ END PROCESSING GRIDDATA
+ PROCESSING GRIDDATA
+
+                ICELLTYPE = 0
+
+                        K =  0.1000000E-03 FOR LAYER 1
+
+                        K =  0.1000000E-05 FOR LAYER 2
+
+                        K =  0.1000000E-03 FOR LAYER 3
+ K33 not provided.  Assuming K33 = K.
+ K22 not provided.  Assuming K22 = K.
+ END PROCESSING GRIDDATA
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1017
+      FILE NAME: C:\Users\emmal\Dropbox\travail de master\Aide flopy\notebooks\conditions_limites\workspace\tuto_BC.dis.grb
+
+ OPENED C:\Users\emmal\Dropbox\travail de master\Aide flopy\notebooks\conditions_limites\workspace\tuto_BC.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1017   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ PROCESSING OC OPTIONS
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1018
+      FILE NAME: tuto_BC.cbc
+
+ OPENED tuto_BC.cbc
+ FILE TYPE:DATA(BINARY)   UNIT 1018   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1019
+      FILE NAME: tuto_BC.hds
+
+ OPENED tuto_BC.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1019   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      THE LAST TIME STEP WILL BE SAVED
+      THE LAST TIME STEP WILL BE SAVED
+      ALL TIME STEPS WILL BE PRINTED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL TUTO_BC          PACKAGE NPF             CONNECTED TO MODEL TUTO_BC          PACKAGE NPF              ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL TUTO_BC          PACKAGE TUTO_BC         CONNECTED TO MODEL TUTO_BC          PACKAGE WEL              ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              DRN IN MODEL TUTO_BC          PACKAGE TUTO_BC         CONNECTED TO MODEL TUTO_BC          PACKAGE DRAIN            ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL TUTO_BC          PACKAGE TUTO_BC         CONNECTED TO MODEL TUTO_BC          PACKAGE SUPER_RIVIERE    ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              GHB IN MODEL TUTO_BC          PACKAGE TUTO_BC         CONNECTED TO MODEL TUTO_BC          PACKAGE GHABE            ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RCH IN MODEL TUTO_BC          PACKAGE TUTO_BC         CONNECTED TO MODEL TUTO_BC          PACKAGE RCHA             ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              EVT IN MODEL TUTO_BC          PACKAGE TUTO_BC         CONNECTED TO MODEL TUTO_BC          PACKAGE EVT              ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL TUTO_BC          PACKAGE TUTO_BC         CONNECTED TO MODEL TUTO_BC          PACKAGE CHD              ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 WEL =           0.0000                   WEL =           0.0000     WEL             
+                 DRN =           0.0000                   DRN =           0.0000     DRAIN           
+                 RIV =       5.8380E-04                   RIV =       5.8380E-04     SUPER_RIVIERE   
+                 GHB =       1.9573E-03                   GHB =       1.9573E-03     GHABE           
+                 RCH =       5.1941E-04                   RCH =       5.1941E-04     RCHA            
+                 EVT =           0.0000                   EVT =           0.0000     EVT             
+                 CHD =       3.2092E-03                   CHD =       3.2092E-03     CHD             
+
+            TOTAL IN =       6.2697E-03              TOTAL IN =       6.2697E-03
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 WEL =       2.0000E-03                   WEL =       2.0000E-03     WEL             
+                 DRN =       2.5128E-03                   DRN =       2.5128E-03     DRAIN           
+                 RIV =       3.4910E-04                   RIV =       3.4910E-04     SUPER_RIVIERE   
+                 GHB =       1.2238E-03                   GHB =       1.2238E-03     GHABE           
+                 RCH =           0.0000                   RCH =           0.0000     RCHA            
+                 EVT =       1.8483E-04                   EVT =       1.8483E-04     EVT             
+                 CHD =           0.0000                   CHD =           0.0000     CHD             
+
+           TOTAL OUT =       6.2705E-03             TOTAL OUT =       6.2705E-03
+
+            IN - OUT =      -8.6058E-07              IN - OUT =      -8.6058E-07
+
+ PERCENT DISCREPANCY =          -0.01     PERCENT DISCREPANCY =          -0.01
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
+ STRESS PERIOD TIME  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
+         TOTAL TIME  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08

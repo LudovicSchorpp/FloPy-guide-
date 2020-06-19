@@ -1,0 +1,12 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  tuto_dis.dis  dis
+  IC6  tuto_dis.ic  ic
+  OC6  tuto_dis.oc  oc
+  NPF6  tuto_dis.npf  npf
+  WEL6  tuto_dis.wel  wel
+  CHD6  tuto_dis.chd  bcs
+END packages
+

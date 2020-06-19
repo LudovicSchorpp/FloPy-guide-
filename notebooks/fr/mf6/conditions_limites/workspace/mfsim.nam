@@ -1,0 +1,18 @@
+BEGIN options
+END options
+
+BEGIN timing
+  TDIS6  tuto_BC.tdis
+END timing
+
+BEGIN models
+  gwf6  tuto_BC.nam  tuto_BC
+END models
+
+BEGIN exchanges
+END exchanges
+
+BEGIN solutiongroup  1
+  ims6  tuto_BC.ims  tuto_BC
+END solutiongroup  1
+

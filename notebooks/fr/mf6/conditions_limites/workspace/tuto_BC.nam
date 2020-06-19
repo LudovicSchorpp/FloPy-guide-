@@ -1,0 +1,17 @@
+BEGIN options
+END options
+
+BEGIN packages
+  RCH6  tuto_BC.rcha  rcha
+  WEL6  tuto_BC.wel  wel
+  CHD6  tuto_BC.chd  chd
+  NPF6  tuto_BC.npf  npf
+  OC6  tuto_BC.oc  oc
+  IC6  tuto_BC.ic  ic
+  DIS6  tuto_BC.dis  dis
+  RIV6  tuto_BC.riv  super_riviere
+  DRN6  tuto_BC.drn  drain
+  EVT6  tuto_BC.evt  evt
+  GHB6  tuto_BC.ghb  ghabe
+END packages
+

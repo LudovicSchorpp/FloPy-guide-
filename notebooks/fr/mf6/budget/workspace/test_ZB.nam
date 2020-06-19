@@ -1,0 +1,12 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  test_ZB.dis  dis
+  IC6  test_ZB.ic  ic
+  OC6  test_ZB.oc  oc
+  NPF6  test_ZB.npf  npf
+  WEL6  test_ZB.wel  wel
+  CHD6  test_ZB.chd  bcs
+END packages
+

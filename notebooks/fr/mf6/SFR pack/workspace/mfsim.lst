@@ -1,0 +1,198 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                            VERSION 6.0.4 03/13/2019
+
+   MODFLOW 6 compiled Mar 21 2019 15:37:31 with IFORT compiler (ver. 19.0.0)
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+System command used to initiate simulation:
+../../exe/mf6.exe
+
+MODFLOW was compiled using uniform precision.
+Real Variables
+  PRECISION: 15
+  KIND: 8
+  TINY (smallest non-zero value):    2.225074-308
+  HUGE (largest value):    1.797693+308
+Integer Variables
+  KIND: 4
+  HUGE (largest value): 2147483647
+  BIT_SIZE: 32
+ 
+
+ OPENED mfsim.nam
+ FILE TYPE:NAM   UNIT 1001   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ READING SIMULATION OPTIONS
+ END OF SIMULATION OPTIONS
+
+ READING SIMULATION TIMING
+
+ OPENED bench_ZB.tdis
+ FILE TYPE:TDIS   UNIT 1002   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ TDIS -- TEMPORAL DISCRETIZATION PACKAGE,
+ VERSION 1 : 11/13/2014 - INPUT READ FROM UNIT 1002
+ PROCESSING TDIS OPTIONS
+    SIMULATION TIME UNIT IS SECONDS
+ END OF TDIS OPTIONS
+ PROCESSING TDIS DIMENSIONS
+    1 STRESS PERIOD(S) IN SIMULATION
+ END OF TDIS DIMENSIONS
+ PROCESSING TDIS PERIODDATA
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000
+ END OF TDIS PERIODDATA
+ END OF SIMULATION TIMING
+
+ READING SIMULATION MODELS
+    GWF6 model TEST_SFR will be created as model 1
+ END OF SIMULATION MODELS
+
+ READING SIMULATION EXCHANGES
+ END OF SIMULATION EXCHANGES
+
+ READING SOLUTIONGROUP
+
+ Creating solution: SLN_1           
+
+ OPENED bench_ZB.ims
+ FILE TYPE:IMS   UNIT 1011   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ END OF SIMULATION SOLUTIONGROUP
+
+ IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
+         INPUT READ FROM UNIT 1011
+
+ PROCESSING IMS OPTIONS
+ SIMPLE OPTION:
+ DEFAULT SOLVER INPUT VALUES FOR FAST SOLUTIONS
+ END OF IMS OPTIONS
+ ***UNDER-RELAXATION WILL NOT BE USED***
+ 
+ ***IMS LINEAR SOLVER WILL BE USED***
+
+ IMSLINEAR -- UNSTRUCTURED LINEAR SOLUTION PACKAGE, VERSION 8, 04/28/2017
+ 
+ OUTER ITERATION CONVERGENCE CRITERION     (HCLOSE) =    0.100000E-02
+ OUTER ITERATION BOUNDARY FLOW RESIDUAL (RCLOSEBND) =    0.100000E+00
+ MAXIMUM NUMBER OF OUTER ITERATIONS        (MXITER) =        25
+ SOLVER PRINTOUT INDEX                     (IPRIMS) =         1
+ NONLINEAR ITERATION METHOD            (NONLINMETH) =         0
+ LINEAR SOLUTION METHOD                   (LINMETH) =         1
+
+       SOLUTION BY THE        CONJUGATE-GRADIENT       METHOD
+ ------------------------------------------------------------------
+ MAXIMUM OF     25 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF     50 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ LINEAR ACCELERATION METHOD            = CG        
+ MATRIX PRECONDITIONING TYPE           = INCOMPLETE LU       
+ MATRIX SCALING APPROACH               = NO SCALING          
+ MATRIX REORDERING APPROACH            = ORIGINAL ORDERING        
+ NUMBER OF ORTHOGONALIZATIONS          =        0
+ HEAD CHANGE CRITERION FOR CLOSURE     =    0.10000E-02
+ RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E+00
+ RESIDUAL CONVERGENCE OPTION           =        0
+ RESIDUAL CONVERGENCE NORM             = INFINITY NORM   
+ RELAXATION FACTOR                     =    0.00000E+00
+
+
+
+1
+                            STRESS PERIOD NO.    1, LENGTH =   1.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =   1.000000    
+
+
+ OUTER ITERATION SUMMARY
+ ---------------------------------------------------------------------------------------
+                       OUTER     INNER         MAXIMUM                    MAXIMUM CHANGE
+                   ITERATION ITERATION          CHANGE                    MODEL-(CELLID)
+ ---------------------------------------------------------------------------------------
+ Linear Solver             1        50    1.810075E+16                    1_GWF-(1,26,1)
+ Under-relaxation          1              1.810075E+16                    1_GWF-(1,26,1)
+ Linear Solver             2        50   -9.050373E+15                    1_GWF-(1,26,1)
+ Under-relaxation          2             -9.050373E+15                    1_GWF-(1,26,1)
+ Linear Solver             3        50   -4.525187E+15                   1_GWF-(1,16,22)
+ Under-relaxation          3             -4.525187E+15                   1_GWF-(1,16,22)
+ Linear Solver             4        50   -2.262593E+15                   1_GWF-(1,16,28)
+ Under-relaxation          4             -2.262593E+15                   1_GWF-(1,16,28)
+ Linear Solver             5        50   -1.131297E+15                   1_GWF-(1,16,30)
+ Under-relaxation          5             -1.131297E+15                   1_GWF-(1,16,30)
+ Linear Solver             6        50   -5.656483E+14                   1_GWF-(1,16,30)
+ Under-relaxation          6             -5.656483E+14                   1_GWF-(1,16,30)
+ Linear Solver             7        50   -2.828242E+14                   1_GWF-(1,16,30)
+ Under-relaxation          7             -2.828242E+14                   1_GWF-(1,16,30)
+ Linear Solver             8        50   -1.414121E+14                   1_GWF-(1,16,30)
+ Under-relaxation          8             -1.414121E+14                   1_GWF-(1,16,30)
+ Linear Solver             9        50   -7.070604E+13                   1_GWF-(1,16,30)
+ Under-relaxation          9             -7.070604E+13                   1_GWF-(1,16,30)
+ Linear Solver            10        50   -3.535302E+13                   1_GWF-(1,16,30)
+ Under-relaxation         10             -3.535302E+13                   1_GWF-(1,16,30)
+ Linear Solver            11        50   -1.767651E+13                   1_GWF-(1,16,30)
+ Under-relaxation         11             -1.767651E+13                   1_GWF-(1,16,30)
+ Linear Solver            12        50   -8.838256E+12                   1_GWF-(1,16,30)
+ Under-relaxation         12             -8.838256E+12                   1_GWF-(1,16,30)
+ Linear Solver            13        50   -4.419128E+12                   1_GWF-(1,16,30)
+ Under-relaxation         13             -4.419128E+12                   1_GWF-(1,16,30)
+ Linear Solver            14        50   -2.209564E+12                   1_GWF-(1,16,30)
+ Under-relaxation         14             -2.209564E+12                   1_GWF-(1,16,30)
+ Linear Solver            15        50   -1.104782E+12                   1_GWF-(1,16,30)
+ Under-relaxation         15             -1.104782E+12                   1_GWF-(1,16,30)
+ Linear Solver            16        50   -5.523911E+11                   1_GWF-(1,16,30)
+ Under-relaxation         16             -5.523911E+11                   1_GWF-(1,16,30)
+ Linear Solver            17        50   -2.761956E+11                   1_GWF-(1,16,30)
+ Under-relaxation         17             -2.761956E+11                   1_GWF-(1,16,30)
+ Linear Solver            18        50   -2.761956E+11                   1_GWF-(1,16,29)
+ Under-relaxation         18             -2.761956E+11                   1_GWF-(1,16,29)
+ Linear Solver            19        49    -131303.                       1_GWF-(1,16,30)
+ Under-relaxation         19              -131303.                       1_GWF-(1,16,30)
+ Linear Solver            20        34    -15.4177                       1_GWF-(1,16,30)
+ Under-relaxation         20              -15.4177                       1_GWF-(1,16,30)
+ Linear Solver            21         5   -4.819587E-03                   1_GWF-(1,16,30)
+ Under-relaxation         21             -4.819587E-03                   1_GWF-(1,16,30)
+ Linear Solver            22         1   -4.371910E-04                    1_GWF-(1,30,1)
+
+ 22 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 989 TOTAL ITERATIONS
+
+ INFORMATION ON VARIABLES STORED IN THE MEMORY MANAGER
+ 
+ Number of allocated integer variables:   37438
+ Number of allocated real variables:    43844
+ Allocated memory in megabytes:    0.500504    
+ 
+
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/05/30 18:24:01
+ Elapsed run time:  0.101 Seconds
+
+ Normal termination of simulation.

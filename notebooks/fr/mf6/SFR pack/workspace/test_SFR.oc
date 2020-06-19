@@ -1,0 +1,11 @@
+BEGIN options
+  BUDGET  FILEOUT  test_SFR.cbc
+  HEAD  FILEOUT  test_SFR.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  LAST
+  PRINT  BUDGET  LAST
+END period  1
+

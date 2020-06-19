@@ -1,0 +1,12 @@
+BEGIN options
+END options
+
+BEGIN continuous  FILEOUT  test_SFR.sfr.obs.csv
+  SFR06-S  STAGE  5
+  SFR06-Q  DOWNSTREAM-FLOW  5
+  SFR07-S  STAGE  6
+  SFR07-Q  DOWNSTREAM-FLOW  6
+  SFR30-S  STAGE  29
+  SFR30-Q  DOWNSTREAM-FLOW  29
+END continuous  FILEOUT  test_SFR.sfr.obs.csv
+

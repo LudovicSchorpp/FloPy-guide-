@@ -1,0 +1,12 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  test_SFR.dis  dis
+  IC6  test_SFR.ic  ic
+  OC6  test_SFR.oc  oc
+  NPF6  test_SFR.npf  npf
+  SFR6  test_SFR.sfr  sfr
+  RCH6  test_SFR.rcha  rcha
+END packages
+

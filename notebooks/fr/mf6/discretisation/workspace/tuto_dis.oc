@@ -1,0 +1,11 @@
+BEGIN options
+  BUDGET  FILEOUT  tuto_dis.cbc
+  HEAD  FILEOUT  tuto_dis.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  LAST
+  PRINT  BUDGET  ALL
+END period  1
+

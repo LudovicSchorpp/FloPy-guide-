@@ -1,0 +1,18 @@
+BEGIN options
+END options
+
+BEGIN timing
+  TDIS6  bench_ZB.tdis
+END timing
+
+BEGIN models
+  gwf6  test_SFR.nam  test_SFR
+END models
+
+BEGIN exchanges
+END exchanges
+
+BEGIN solutiongroup  1
+  ims6  bench_ZB.ims  test_SFR
+END solutiongroup  1
+

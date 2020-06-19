@@ -1,0 +1,10 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  Basique.dis  dis
+  IC6  Basique.ic  ic
+  NPF6  Basique.npf  npf
+  OC6  Basique.oc  oc
+END packages
+

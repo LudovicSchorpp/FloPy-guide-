@@ -1,0 +1,214 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.0.4 03/13/2019
+
+   MODFLOW 6 compiled Mar 21 2019 15:37:31 with IFORT compiler (ver. 19.0.0)
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+MODFLOW was compiled using uniform precision.
+Precision of REAL variables: 15
+
+
+ OPENED test_ZB.dis
+ FILE TYPE:DIS6                   UNIT 1005   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED test_ZB.ic
+ FILE TYPE:IC6                    UNIT 1006   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED test_ZB.oc
+ FILE TYPE:OC6                    UNIT 1007   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED test_ZB.npf
+ FILE TYPE:NPF6                   UNIT 1008   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED test_ZB.wel
+ FILE TYPE:WEL6                   UNIT 1009   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED test_ZB.chd
+ FILE TYPE:CHD6                   UNIT 1010   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM UNIT 1005
+
+
+ PROCESSING DISCRETIZATION OPTIONS
+ END OF DISCRETIZATION OPTIONS
+ MODEL LENGTH UNIT IS UNDEFINED
+ PROCESSING DISCRETIZATION DIMENSIONS
+    NLAY =       3
+    NROW =      30
+    NCOL =      30
+ END OF DISCRETIZATION DIMENSIONS
+ PROCESSING GRIDDATA
+
+ TOP ELEVATION OF LAYER 1 =   1.000000    
+
+   MODEL LAYER BOTTOM EL. =   0.000000     FOR LAYER 1
+
+   MODEL LAYER BOTTOM EL. =  -1.000000     FOR LAYER 2
+
+   MODEL LAYER BOTTOM EL. =  -2.000000     FOR LAYER 3
+
+                  IDOMAIN = 1
+ END PROCESSING GRIDDATA
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM UNIT 1008
+
+
+ PROCESSING NPF OPTIONS
+    CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
+    ALTERNATIVE CELL AVERAGING HAS BEEN SET TO AMT-LMK
+    CELL AVERAGING METHOD HAS BEEN SET TO: AMT-LMK                                                                                                                                                                                                                                                                                                     
+ END OF NPF OPTIONS
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1009
+
+ PROCESSING WEL OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF WEL OPTIONS
+
+ PROCESSING WEL DIMENSIONS
+    MAXBOUND =       1
+ END OF WEL DIMENSIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1010
+
+ PROCESSING CHD OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF CHD OPTIONS
+
+ PROCESSING CHD DIMENSIONS
+    MAXBOUND =      60
+ END OF CHD DIMENSIONS
+
+ IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1006
+ PROCESSING GRIDDATA
+
+     INITIAL HEAD =   1.000000    
+ END PROCESSING GRIDDATA
+ PROCESSING GRIDDATA
+
+                ICELLTYPE = 0 FOR LAYER 1
+
+                ICELLTYPE = 0 FOR LAYER 2
+
+                ICELLTYPE = 0 FOR LAYER 3
+
+                        K =  0.1000000E-03 FOR LAYER 1
+
+                        K =  0.1000000E-05 FOR LAYER 2
+
+                        K =  0.1000000E-03 FOR LAYER 3
+ K33 not provided.  Assuming K33 = K.
+ K22 not provided.  Assuming K22 = K.
+ END PROCESSING GRIDDATA
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1012
+      FILE NAME: C:\Users\emmal\Dropbox\travail de master\Aide flopy\notebooks\budget\workspace\test_ZB.dis.grb
+
+ OPENED C:\Users\emmal\Dropbox\travail de master\Aide flopy\notebooks\budget\workspace\test_ZB.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1012   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ PROCESSING OC OPTIONS
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1013
+      FILE NAME: test_ZB.cbc
+
+ OPENED test_ZB.cbc
+ FILE TYPE:DATA(BINARY)   UNIT 1013   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1014
+      FILE NAME: test_ZB.hds
+
+ OPENED test_ZB.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1014   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      THE LAST TIME STEP WILL BE SAVED
+      THE LAST TIME STEP WILL BE SAVED
+      ALL TIME STEPS WILL BE PRINTED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1013 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL TEST_ZB          PACKAGE NPF             CONNECTED TO MODEL TEST_ZB          PACKAGE NPF              ON UNIT   1013 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL TEST_ZB          PACKAGE TEST_ZB         CONNECTED TO MODEL TEST_ZB          PACKAGE WEL              ON UNIT   1013 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL TEST_ZB          PACKAGE TEST_ZB         CONNECTED TO MODEL TEST_ZB          PACKAGE BCS              ON UNIT   1013 AT TIME STEP      1, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1014 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 WEL =           0.0000                   WEL =           0.0000     WEL             
+                 CHD =       2.4073E-04                   CHD =       2.4073E-04     BCS             
+
+            TOTAL IN =       2.4073E-04              TOTAL IN =       2.4073E-04
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 WEL =       2.0000E-04                   WEL =       2.0000E-04     WEL             
+                 CHD =       4.0814E-05                   CHD =       4.0814E-05     BCS             
+
+           TOTAL OUT =       2.4081E-04             TOTAL OUT =       2.4081E-04
+
+            IN - OUT =      -8.3424E-08              IN - OUT =      -8.3424E-08
+
+ PERCENT DISCREPANCY =          -0.03     PERCENT DISCREPANCY =          -0.03
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
+ STRESS PERIOD TIME  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
+         TOTAL TIME  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08

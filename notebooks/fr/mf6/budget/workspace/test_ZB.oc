@@ -1,0 +1,11 @@
+BEGIN options
+  BUDGET  FILEOUT  test_ZB.cbc
+  HEAD  FILEOUT  test_ZB.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  LAST
+  PRINT  BUDGET  ALL
+END period  1
+

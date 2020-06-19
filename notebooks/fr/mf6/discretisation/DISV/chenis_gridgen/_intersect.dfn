@@ -1,0 +1,9 @@
+LOAD quadtreegrid.dfn
+
+BEGIN GRID_INTERSECTION intersect
+  GRID = quadtreegrid
+  LAYER = 1
+  SHAPEFILE = ../data/Tet
+  FEATURE_TYPE = line
+  OUTPUT_FILE = intersection.ifo
+END GRID_INTERSECTION intersect

@@ -1,0 +1,216 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.0.4 03/13/2019
+
+   MODFLOW 6 compiled Mar 21 2019 15:37:31 with IFORT compiler (ver. 19.0.0)
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+MODFLOW was compiled using uniform precision.
+Precision of REAL variables: 15
+
+
+ OPENED tuto_dis.dis
+ FILE TYPE:DIS6                   UNIT 1005   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_dis.ic
+ FILE TYPE:IC6                    UNIT 1006   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_dis.oc
+ FILE TYPE:OC6                    UNIT 1007   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_dis.npf
+ FILE TYPE:NPF6                   UNIT 1008   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_dis.wel
+ FILE TYPE:WEL6                   UNIT 1009   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED tuto_dis.chd
+ FILE TYPE:CHD6                   UNIT 1010   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM UNIT 1005
+
+
+ PROCESSING DISCRETIZATION OPTIONS
+    XORIGIN SPECIFIED AS     1000.00000000000    
+    YORIGIN SPECIFIED AS     2000.00000000000    
+ END OF DISCRETIZATION OPTIONS
+ MODEL LENGTH UNIT IS UNDEFINED
+ PROCESSING DISCRETIZATION DIMENSIONS
+    NLAY =       3
+    NROW =      30
+    NCOL =      40
+ END OF DISCRETIZATION DIMENSIONS
+ PROCESSING GRIDDATA
+
+ TOP ELEVATION OF LAYER 1 =   10.00000    
+
+   MODEL LAYER BOTTOM EL. =   5.000000     FOR LAYER 1
+
+   MODEL LAYER BOTTOM EL. =   0.000000     FOR LAYER 2
+
+   MODEL LAYER BOTTOM EL. =  -10.00000     FOR LAYER 3
+ END PROCESSING GRIDDATA
+
+ THE SPECIFIED IDOMAIN RESULTS IN A REDUCED NUMBER OF CELLS.
+ NUMBER OF USER NODES:    3600
+ NUMBER OF NODES IN SOLUTION:    1293
+
+
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM UNIT 1008
+
+
+ PROCESSING NPF OPTIONS
+    CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
+    ALTERNATIVE CELL AVERAGING HAS BEEN SET TO AMT-LMK
+    CELL AVERAGING METHOD HAS BEEN SET TO: AMT-LMK                                                                                                                                                                                                                                                                                                     
+ END OF NPF OPTIONS
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1009
+
+ PROCESSING WEL OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF WEL OPTIONS
+
+ PROCESSING WEL DIMENSIONS
+    MAXBOUND =       1
+ END OF WEL DIMENSIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1010
+
+ PROCESSING CHD OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END OF CHD OPTIONS
+
+ PROCESSING CHD DIMENSIONS
+    MAXBOUND =      30
+ END OF CHD DIMENSIONS
+
+ IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1006
+ PROCESSING GRIDDATA
+
+     INITIAL HEAD =   1.000000    
+ END PROCESSING GRIDDATA
+ PROCESSING GRIDDATA
+
+                ICELLTYPE = 0
+
+                        K =  0.1000000E-03 FOR LAYER 1
+
+                        K =  0.1000000E-05 FOR LAYER 2
+
+                        K =  0.1000000E-03 FOR LAYER 3
+ K33 not provided.  Assuming K33 = K.
+ K22 not provided.  Assuming K22 = K.
+ END PROCESSING GRIDDATA
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1012
+      FILE NAME: C:\Users\emmal\Dropbox\travail de master\Aide flopy\notebooks\discretisation\workspace\tuto_dis.dis.grb
+
+ OPENED C:\Users\emmal\Dropbox\travail de master\Aide flopy\notebooks\discretisation\workspace\tuto_dis.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1012   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ PROCESSING OC OPTIONS
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1013
+      FILE NAME: tuto_dis.cbc
+
+ OPENED tuto_dis.cbc
+ FILE TYPE:DATA(BINARY)   UNIT 1013   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1014
+      FILE NAME: tuto_dis.hds
+
+ OPENED tuto_dis.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1014   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      THE LAST TIME STEP WILL BE SAVED
+      THE LAST TIME STEP WILL BE SAVED
+      ALL TIME STEPS WILL BE PRINTED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1013 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL TUTO_DIS         PACKAGE NPF             CONNECTED TO MODEL TUTO_DIS         PACKAGE NPF              ON UNIT   1013 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL TUTO_DIS         PACKAGE TUTO_DIS        CONNECTED TO MODEL TUTO_DIS         PACKAGE WEL              ON UNIT   1013 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL TUTO_DIS         PACKAGE TUTO_DIS        CONNECTED TO MODEL TUTO_DIS         PACKAGE BCS              ON UNIT   1013 AT TIME STEP      1, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1014 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 WEL =           0.0000                   WEL =           0.0000     WEL             
+                 CHD =       7.1040E-03                   CHD =       7.1040E-03     BCS             
+
+            TOTAL IN =       7.1040E-03              TOTAL IN =       7.1040E-03
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 WEL =       7.0000E-03                   WEL =       7.0000E-03     WEL             
+                 CHD =       1.0371E-04                   CHD =       1.0371E-04     BCS             
+
+           TOTAL OUT =       7.1037E-03             TOTAL OUT =       7.1037E-03
+
+            IN - OUT =       2.7365E-07              IN - OUT =       2.7365E-07
+
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
+ STRESS PERIOD TIME  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
+         TOTAL TIME  1.0000     1.66667E-02 2.77778E-04 1.15741E-05 3.16881E-08
