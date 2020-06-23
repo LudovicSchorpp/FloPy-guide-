@@ -2,7 +2,7 @@ BEGIN options
 END options
 
 BEGIN timing
-  TDIS6  bench_ZB.tdis
+  TDIS6  Budget_mf6.tdis
 END timing
 
 BEGIN models
@@ -13,6 +13,6 @@ BEGIN exchanges
 END exchanges
 
 BEGIN solutiongroup  1
-  ims6  bench_ZB.ims  test_ZB
+  ims6  Budget_mf6.ims  test_ZB
 END solutiongroup  1
 

@@ -75,13 +75,13 @@ Precision of REAL variables: 15
 
  PROCESSING DISCRETIZATION DIMENSIONS
    NLAY = 1
-   NCPL = 1874
-   NVERT = 2266
+   NCPL = 1862
+   NVERT = 2243
  END OF DISCRETIZATION DIMENSIONS
 
  PROCESSING GRIDDATA
 
- TOP ELEVATION OF LAYER 1 =   50.00000    
+ TOP ELEVATION OF LAYER 1 =   100.0000    
 
    MODEL LAYER BOTTOM EL. =  -50.00000    
 
@@ -89,7 +89,7 @@ Precision of REAL variables: 15
  END PROCESSING GRIDDATA
 
  PROCESSING VERTICES
-   SUCCESSFULLY READ 2266 (X,Y) COORDINATES
+   SUCCESSFULLY READ 2243 (X,Y) COORDINATES
    MINIMUM X COORDINATE =     664000.000000000    
    MAXIMUM X COORDINATE =     705000.000000000    
    MINIMUM Y COORDINATE =     6153000.00000000    
@@ -97,12 +97,12 @@ Precision of REAL variables: 15
  END PROCESSING VERTICES
 
  PROCESSING CELL2D
-   SUCCESSFULLY READ 1874 CELL2D INFORMATION ENTRIES
+   SUCCESSFULLY READ 1862 CELL2D INFORMATION ENTRIES
    MINIMUM X CELL CENTER =     664250.000000000    
    MAXIMUM X CELL CENTER =     704500.000000000    
    MINIMUM Y CELL CENTER =     6153500.00000000    
    MAXIMUM Y CELL CENTER =     6203500.00000000    
-   MAXIMUM NUMBER OF CELL2D VERTICES IS 8 FOR CELL 450
+   MAXIMUM NUMBER OF CELL2D VERTICES IS 8 FOR CELL 475
  END PROCESSING VERTICES
 
  NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM UNIT 1008
@@ -119,7 +119,7 @@ Precision of REAL variables: 15
  END OF WEL OPTIONS
 
  PROCESSING WEL DIMENSIONS
-    MAXBOUND =      12
+    MAXBOUND =      11
  END OF WEL DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1011
@@ -210,22 +210,22 @@ Precision of REAL variables: 15
            IN:                                      IN:
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
-                 RIV =           0.2485                   RIV =           0.2485     TET             
-                 RCH =           3.1652                   RCH =           3.1652     RCHA            
+                 RIV =           0.4703                   RIV =           0.4703     TET             
+                 RCH =           3.1646                   RCH =           3.1646     RCHA            
 
-            TOTAL IN =           3.4137              TOTAL IN =           3.4137
+            TOTAL IN =           3.6349              TOTAL IN =           3.6349
 
           OUT:                                     OUT:
           ----                                     ----
-                 WEL =           0.6000                   WEL =           0.6000     WEL             
-                 RIV =           2.8138                   RIV =           2.8138     TET             
+                 WEL =           0.5500                   WEL =           0.5500     WEL             
+                 RIV =           3.0842                   RIV =           3.0842     TET             
                  RCH =           0.0000                   RCH =           0.0000     RCHA            
 
-           TOTAL OUT =           3.4138             TOTAL OUT =           3.4138
+           TOTAL OUT =           3.6342             TOTAL OUT =           3.6342
 
-            IN - OUT =      -1.8928E-05              IN - OUT =      -1.8928E-05
+            IN - OUT =       7.4820E-04              IN - OUT =       7.4820E-04
 
- PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+ PERCENT DISCREPANCY =           0.02     PERCENT DISCREPANCY =           0.02
 
 
 
