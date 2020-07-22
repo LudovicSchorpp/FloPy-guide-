@@ -75,8 +75,8 @@ Precision of REAL variables: 15
 
  PROCESSING DISCRETIZATION DIMENSIONS
    NLAY = 1
-   NCPL = 1862
-   NVERT = 2243
+   NCPL = 1932
+   NVERT = 2344
  END OF DISCRETIZATION DIMENSIONS
 
  PROCESSING GRIDDATA
@@ -89,7 +89,7 @@ Precision of REAL variables: 15
  END PROCESSING GRIDDATA
 
  PROCESSING VERTICES
-   SUCCESSFULLY READ 2243 (X,Y) COORDINATES
+   SUCCESSFULLY READ 2344 (X,Y) COORDINATES
    MINIMUM X COORDINATE =     664000.000000000    
    MAXIMUM X COORDINATE =     705000.000000000    
    MINIMUM Y COORDINATE =     6153000.00000000    
@@ -97,12 +97,12 @@ Precision of REAL variables: 15
  END PROCESSING VERTICES
 
  PROCESSING CELL2D
-   SUCCESSFULLY READ 1862 CELL2D INFORMATION ENTRIES
+   SUCCESSFULLY READ 1932 CELL2D INFORMATION ENTRIES
    MINIMUM X CELL CENTER =     664250.000000000    
    MAXIMUM X CELL CENTER =     704500.000000000    
    MINIMUM Y CELL CENTER =     6153500.00000000    
    MAXIMUM Y CELL CENTER =     6203500.00000000    
-   MAXIMUM NUMBER OF CELL2D VERTICES IS 8 FOR CELL 475
+   MAXIMUM NUMBER OF CELL2D VERTICES IS 8 FOR CELL 434
  END PROCESSING VERTICES
 
  NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM UNIT 1008
@@ -110,6 +110,7 @@ Precision of REAL variables: 15
 
  PROCESSING NPF OPTIONS
     CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
+    XT3D FORMULATION IS SELECTED.
  END OF NPF OPTIONS
 
  WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1010
@@ -119,7 +120,7 @@ Precision of REAL variables: 15
  END OF WEL OPTIONS
 
  PROCESSING WEL DIMENSIONS
-    MAXBOUND =      11
+    MAXBOUND =      14
  END OF WEL DIMENSIONS
 
  RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1011
@@ -151,7 +152,12 @@ Precision of REAL variables: 15
                         K =  0.1000000E-03
  K33 not provided.  Assuming K33 = K.
  K22 not provided.  Assuming K22 = K.
+XT3D IN USE, BUT ANGLE1 NOT SPECIFIED. SETTING ANGLE1 TO ZERO.
  END PROCESSING GRIDDATA
+
+ XT3D is active.
+
+
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1013
       FILE NAME: M:\GitHub\FloPy-guide-\notebooks\fr\mf6\discretisation\DISV\workspace\Modele_raffine.disv.grb
@@ -210,22 +216,22 @@ Precision of REAL variables: 15
            IN:                                      IN:
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
-                 RIV =           0.4703                   RIV =           0.4703     TET             
-                 RCH =           3.1646                   RCH =           3.1646     RCHA            
+                 RIV =           0.5368                   RIV =           0.5368     TET             
+                 RCH =           3.1642                   RCH =           3.1642     RCHA            
 
-            TOTAL IN =           3.6349              TOTAL IN =           3.6349
+            TOTAL IN =           3.7010              TOTAL IN =           3.7010
 
           OUT:                                     OUT:
           ----                                     ----
-                 WEL =           0.5500                   WEL =           0.5500     WEL             
-                 RIV =           3.0842                   RIV =           3.0842     TET             
+                 WEL =           0.7000                   WEL =           0.7000     WEL             
+                 RIV =           3.0049                   RIV =           3.0049     TET             
                  RCH =           0.0000                   RCH =           0.0000     RCHA            
 
-           TOTAL OUT =           3.6342             TOTAL OUT =           3.6342
+           TOTAL OUT =           3.7049             TOTAL OUT =           3.7049
 
-            IN - OUT =       7.4820E-04              IN - OUT =       7.4820E-04
+            IN - OUT =      -3.8794E-03              IN - OUT =      -3.8794E-03
 
- PERCENT DISCREPANCY =           0.02     PERCENT DISCREPANCY =           0.02
+ PERCENT DISCREPANCY =          -0.10     PERCENT DISCREPANCY =          -0.10
 
 
 

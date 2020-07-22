@@ -94,8 +94,6 @@ Precision of REAL variables: 15
 
  PROCESSING NPF OPTIONS
     CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
-    ALTERNATIVE CELL AVERAGING HAS BEEN SET TO AMT-LMK
-    CELL AVERAGING METHOD HAS BEEN SET TO: AMT-LMK                                                                                                                                                                                                                                                                                                     
  END OF NPF OPTIONS
 
  WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1009
@@ -121,11 +119,15 @@ Precision of REAL variables: 15
  IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1006
  PROCESSING GRIDDATA
 
-     INITIAL HEAD =   1.000000    
+     INITIAL HEAD =   10.00000    
  END PROCESSING GRIDDATA
  PROCESSING GRIDDATA
 
-                ICELLTYPE = 0
+                ICELLTYPE = 1 FOR LAYER 1
+
+                ICELLTYPE = 0 FOR LAYER 2
+
+                ICELLTYPE = 0 FOR LAYER 3
 
                         K =  0.1000000E-03 FOR LAYER 1
 
@@ -137,9 +139,9 @@ Precision of REAL variables: 15
  END PROCESSING GRIDDATA
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1012
-      FILE NAME: C:\Users\emmal\Dropbox\travail de master\Aide flopy\notebooks\discretisation\workspace\tuto_dis.dis.grb
+      FILE NAME: M:\GitHub\FloPy-guide-\notebooks\fr\mf6\discretisation\workspace\tuto_dis.dis.grb
 
- OPENED C:\Users\emmal\Dropbox\travail de master\Aide flopy\notebooks\discretisation\workspace\tuto_dis.dis.grb
+ OPENED M:\GitHub\FloPy-guide-\notebooks\fr\mf6\discretisation\workspace\tuto_dis.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1012   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
@@ -190,18 +192,18 @@ Precision of REAL variables: 15
            IN:                                      IN:
            ---                                      ---
                  WEL =           0.0000                   WEL =           0.0000     WEL             
-                 CHD =       7.1040E-03                   CHD =       7.1040E-03     BCS             
+                 CHD =       5.5001E-03                   CHD =       5.5001E-03     BCS             
 
-            TOTAL IN =       7.1040E-03              TOTAL IN =       7.1040E-03
+            TOTAL IN =       5.5001E-03              TOTAL IN =       5.5001E-03
 
           OUT:                                     OUT:
           ----                                     ----
-                 WEL =       7.0000E-03                   WEL =       7.0000E-03     WEL             
-                 CHD =       1.0371E-04                   CHD =       1.0371E-04     BCS             
+                 WEL =       5.5000E-03                   WEL =       5.5000E-03     WEL             
+                 CHD =           0.0000                   CHD =           0.0000     BCS             
 
-           TOTAL OUT =       7.1037E-03             TOTAL OUT =       7.1037E-03
+           TOTAL OUT =       5.5000E-03             TOTAL OUT =       5.5000E-03
 
-            IN - OUT =       2.7365E-07              IN - OUT =       2.7365E-07
+            IN - OUT =       6.4426E-08              IN - OUT =       6.4426E-08
 
  PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
 

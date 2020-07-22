@@ -1,11 +1,12 @@
 BEGIN options
   SAVE_FLOWS
-  ALTERNATIVE_CELL_AVERAGING  amt-lmk
   SAVE_SPECIFIC_DISCHARGE
 END options
 
 BEGIN griddata
-  icelltype
+  icelltype  LAYERED
+    CONSTANT  1
+    CONSTANT  0
     CONSTANT  0
   k  LAYERED
     CONSTANT  1.00000000E-04

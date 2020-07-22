@@ -1,5 +1,6 @@
 BEGIN options
   SAVE_FLOWS
+  XT3D  RHS
   SAVE_SPECIFIC_DISCHARGE
 END options
 
