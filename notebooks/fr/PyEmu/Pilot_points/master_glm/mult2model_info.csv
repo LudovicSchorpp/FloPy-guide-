@@ -1,0 +1,2 @@
+,org_file,model_file,use_cols,index_cols,fmt,sep,head_rows,upper_bound,lower_bound,mlt_file,fac_file,pp_file,zero_based
+0,org\k.txt,k.txt,,,free,,0,0.001,1e-05,mult\kp_inst0_pilotpoint.csv,kp_inst0pp.fac,kp_inst0pp.dat,False

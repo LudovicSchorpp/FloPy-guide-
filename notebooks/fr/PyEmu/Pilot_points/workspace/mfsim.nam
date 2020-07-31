@@ -1,0 +1,18 @@
+BEGIN options
+END options
+
+BEGIN timing
+  TDIS6  test_pst.tdis
+END timing
+
+BEGIN models
+  gwf6  test_pst.nam  test_pst
+END models
+
+BEGIN exchanges
+END exchanges
+
+BEGIN solutiongroup  1
+  ims6  test_pst.ims  test_pst
+END solutiongroup  1
+

@@ -1,0 +1,11 @@
+BEGIN options
+  BUDGET  FILEOUT  test_pst.cbc
+  HEAD  FILEOUT  test_pst.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  LAST
+  SAVE  BUDGET  LAST
+  PRINT  HEAD  ALL
+END period  1
+

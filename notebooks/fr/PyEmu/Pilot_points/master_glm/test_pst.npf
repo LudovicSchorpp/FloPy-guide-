@@ -1,0 +1,11 @@
+BEGIN options
+  SAVE_FLOWS
+END options
+
+BEGIN griddata
+  icelltype
+    CONSTANT  0
+  k
+    OPEN/CLOSE  'k.txt'  FACTOR  1.0
+END griddata
+

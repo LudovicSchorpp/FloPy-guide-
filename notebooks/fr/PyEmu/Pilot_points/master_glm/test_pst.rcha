@@ -1,0 +1,10 @@
+BEGIN options
+  READASARRAYS
+  SAVE_FLOWS
+END options
+
+BEGIN period  1
+  recharge
+    CONSTANT  3.17097920E-08
+END period  1
+

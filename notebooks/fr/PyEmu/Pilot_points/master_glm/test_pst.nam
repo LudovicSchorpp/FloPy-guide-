@@ -1,0 +1,13 @@
+BEGIN options
+END options
+
+BEGIN packages
+  DIS6  test_pst.dis  dis
+  IC6  test_pst.ic  ic
+  OC6  test_pst.oc  oc
+  NPF6  test_pst.npf  npf
+  RCH6  test_pst.rcha  rcha
+  CHD6  bc.chd  chd
+  OBS6  test_pst.obs  head_obs
+END packages
+
