@@ -1,0 +1,10 @@
+BEGIN options
+  BUDGET  FILEOUT  mp_sim.cbc
+  HEAD  FILEOUT  mp_sim.hds
+END options
+
+BEGIN period  1
+  SAVE  HEAD  ALL
+  SAVE  BUDGET  ALL
+END period  1
+

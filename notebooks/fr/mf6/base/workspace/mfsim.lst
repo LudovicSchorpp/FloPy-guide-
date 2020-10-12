@@ -19,7 +19,7 @@ and distribution information.
 
 
 System command used to initiate simulation:
-../../exe/mf6.exe
+../../../../exe/mf6.exe
 
 MODFLOW was compiled using uniform precision.
 Real Variables
@@ -171,7 +171,7 @@ Integer Variables
  Allocated memory in megabytes:    4.904400E-02
  
 
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/05/31 23:07:45
- Elapsed run time:  0.020 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2020/10/11 10:16:45
+ Elapsed run time:  0.125 Seconds
 
  Normal termination of simulation.

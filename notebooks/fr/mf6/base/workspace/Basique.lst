@@ -91,9 +91,9 @@ Precision of REAL variables: 15
  END PROCESSING GRIDDATA
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1010
-      FILE NAME: C:\Users\emmal\Dropbox\travail de master\Aide flopy\notebooks\base\workspace\Basique.dis.grb
+      FILE NAME: C:\Users\emmal\Documents\github\FloPy-guide-\notebooks\fr\mf6\base\workspace\Basique.dis.grb
 
- OPENED C:\Users\emmal\Dropbox\travail de master\Aide flopy\notebooks\base\workspace\Basique.dis.grb
+ OPENED C:\Users\emmal\Documents\github\FloPy-guide-\notebooks\fr\mf6\base\workspace\Basique.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1010   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           

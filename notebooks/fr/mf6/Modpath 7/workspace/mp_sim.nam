@@ -1,0 +1,15 @@
+BEGIN options
+  SAVE_FLOWS
+END options
+
+BEGIN packages
+  DIS6  mp_sim.dis  dis
+  IC6  mp_sim.ic  ic
+  NPF6  mp_sim.npf  npf
+  RCH6  mp_sim.rcha  rcha
+  WEL6  mp_sim.wel  puits
+  CHD6  riv1.chd  riv1
+  CHD6  riv2.chd  riv2
+  OC6  mp_sim.oc  oc
+END packages
+
