@@ -338,9 +338,9 @@ Name                                      Type                             Time 
 0_92_92                                   Continuous HEAD                  All times    "1 93 93"
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1015
-      FILE NAME: M:\GitHub\FloPy-guide-\notebooks\fr\PyEmu\Pilot_points\workspace\test_pst.dis.grb
+      FILE NAME: C:\Users\emmal\Documents\GitHub\FloPy-guide-\notebooks\fr\PyEmu\Pilot_points\workspace\test_pst.dis.grb
 
- OPENED M:\GitHub\FloPy-guide-\notebooks\fr\PyEmu\Pilot_points\workspace\test_pst.dis.grb
+ OPENED C:\Users\emmal\Documents\GitHub\FloPy-guide-\notebooks\fr\PyEmu\Pilot_points\workspace\test_pst.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1015   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
