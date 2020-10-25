@@ -7,7 +7,7 @@ Following topics are discussed:
 - Implemntation of simple Boundary Conditions (CHD, WEL, RIV, DRN, ...)
 - Create and manipulate unstructured grid
 - Usage of shapefiles and raster to improve model "realism"
-
+- Inversions with PyEmu and Pest++
 
 Soon : 
 - Temporal discretisation and transient simulations
@@ -15,3 +15,4 @@ Soon :
 - Transport modelling and density dependant flow (MT3D and SEAWAT)
 - ...
 
+For any questions you can contact me to [email](mailto:ludovic.schorpp@unine.ch)
