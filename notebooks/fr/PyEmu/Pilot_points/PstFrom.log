@@ -1,40 +1,16 @@
-2020-10-25 22:09:00.304427 starting: opening PstFrom.log for logging
-2020-10-25 22:09:00.305426 starting PstFrom process
-2020-10-25 22:09:00.306426 starting: setting up dirs
-2020-10-25 22:09:00.306426 starting: removing existing new_d 'template'
-2020-10-25 22:09:00.320426 finished: removing existing new_d 'template' took: 0:00:00.014000
-2020-10-25 22:09:00.320426 starting: copying original_d 'workspace' to new_d 'template'
-2020-10-25 22:09:00.336424 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:00.015998
-2020-10-25 22:09:00.336424 finished: setting up dirs took: 0:00:00.029998
-2020-10-25 22:09:02.382504 starting: adding observations from tabular output file
-2020-10-25 22:09:02.383504 starting: reading list template\heads.csv
-2020-10-25 22:09:02.394493 finished: reading list template\heads.csv took: 0:00:00.010989
-2020-10-25 22:09:02.395503 starting: building insfile for tabular output file heads.csv
-2020-10-25 22:09:02.415219 finished: building insfile for tabular output file heads.csv took: 0:00:00.019716
-2020-10-25 22:09:02.416209 starting: adding observation from instruction file 'template\heads.csv.ins'
-2020-10-25 22:09:02.435246 finished: adding observation from instruction file 'template\heads.csv.ins' took: 0:00:00.019037
-2020-10-25 22:09:02.437246 finished: adding observations from tabular output file took: 0:00:00.054742
-2020-10-25 22:09:06.320382 starting: adding pilotpoint type multiplier style parameters for file(s) ['k.txt']
-2020-10-25 22:09:06.320382 starting: loading array template\k.txt
-2020-10-25 22:09:06.334381 finished: loading array template\k.txt took: 0:00:00.013999
-2020-10-25 22:09:06.335382 loaded array 'k.txt' of shape (100, 100)
-2020-10-25 22:09:06.350391 starting: writing array-based template file 'kp_inst0_pilotpoint.csv.tpl'
-2020-10-25 22:09:06.350391 starting: setting up pilot point parameters
-2020-10-25 22:09:06.350391 No spatial reference (containing cell spacing) passed.
-2020-10-25 22:09:06.350391 OK - using spatial reference in parent object.
-2020-10-25 22:09:06.564853 64 pilot point parameters created
-2020-10-25 22:09:06.564853 pilot point 'pargp':kp_inst:0
-2020-10-25 22:09:06.565853 finished: setting up pilot point parameters took: 0:00:00.215462
-2020-10-25 22:09:06.579853 starting: calculating factors for pargp=kp_inst:0
-2020-10-25 22:09:06.580853 saving krige variance file:template\kp_inst0pp.var.dat
-2020-10-25 22:09:06.580853 saving krige factors file:template\kp_inst0pp.fac
-2020-10-25 22:09:49.450204 finished: calculating factors for pargp=kp_inst:0 took: 0:00:42.870351
-2020-10-25 22:09:49.450204 starting: writing array-based template file 'kp_inst0pp.dat.tpl'
-2020-10-25 22:09:49.464193 finished: adding pilotpoint type multiplier style parameters for file(s) ['k.txt'] took: 0:00:43.143811
-2020-10-25 22:10:07.418751 forward_run line:pyemu.os_utils.run(r'..\mf6')
-
-2020-10-25 22:10:11.265435 WARNING: sys_cmd 'pyemu.os_utils.run(r'..\mf6')
-' already in sys cmds, skipping...
-2020-10-25 22:10:11.278436 starting: building prior covariance matrix
-2020-10-25 22:10:11.311804 saving prior covariance matrix to file template\pest_test.prior.cov
-2020-10-25 22:10:11.315804 finished: building prior covariance matrix took: 0:00:00.037368
+2020-10-25 22:16:14.424721 starting: opening PstFrom.log for logging
+2020-10-25 22:16:14.424721 starting PstFrom process
+2020-10-25 22:16:14.425722 starting: setting up dirs
+2020-10-25 22:16:14.426722 starting: removing existing new_d 'template'
+2020-10-25 22:16:14.432731 finished: removing existing new_d 'template' took: 0:00:00.006009
+2020-10-25 22:16:14.432731 starting: copying original_d 'workspace' to new_d 'template'
+2020-10-25 22:16:14.448721 finished: copying original_d 'workspace' to new_d 'template' took: 0:00:00.015990
+2020-10-25 22:16:14.449722 finished: setting up dirs took: 0:00:00.024000
+2020-10-25 22:16:20.011671 starting: adding observations from tabular output file
+2020-10-25 22:16:20.011671 starting: reading list template\heads.csv
+2020-10-25 22:16:20.024681 finished: reading list template\heads.csv took: 0:00:00.013010
+2020-10-25 22:16:20.024681 starting: building insfile for tabular output file heads.csv
+2020-10-25 22:16:20.038680 finished: building insfile for tabular output file heads.csv took: 0:00:00.013999
+2020-10-25 22:16:20.038680 starting: adding observation from instruction file 'template\heads.csv.ins'
+2020-10-25 22:16:20.054680 finished: adding observation from instruction file 'template\heads.csv.ins' took: 0:00:00.016000
+2020-10-25 22:16:20.055679 finished: adding observations from tabular output file took: 0:00:00.044008
